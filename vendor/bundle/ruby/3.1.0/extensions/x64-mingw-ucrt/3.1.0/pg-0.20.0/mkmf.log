@@ -1,0 +1,35 @@
+find_executable: checking for pg_config... -------------------- no
+
+--------------------
+
+find_header: checking for libpq-fe.h... -------------------- no
+
+PATH=".;C:/Ruby31-x64/lib;C:\Ruby31-x64\bin;C:\Ruby31-x64\msys64\ucrt64\bin;C:\Ruby31-x64\msys64\usr\bin;C:\Ruby31-x64\bin;C:\WINDOWS;C:\WINDOWS\system32;C:\WINDOWS\System32\Wbem;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Users\kouko\AppData\Local\Microsoft\WindowsApps;C:\texlive\2021\bin\win32;C:\Users\kouko\AppData\Local\atom\bin;C:\Users\kouko\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\Git\cmd;C:\Users\kouko\AppData\Roaming\npm;C:\Program Files\heroku\bin" "gcc -o conftest.exe -IC:/Ruby31-x64/include/ruby-3.1.0/x64-mingw-ucrt -IC:/Ruby31-x64/include/ruby-3.1.0/ruby/backward -IC:/Ruby31-x64/include/ruby-3.1.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math -fstack-protector-strong conftest.c  -L. -LC:/Ruby31-x64/lib -L. -pipe -s -fstack-protector-strong -Wl,--no-as-needed  -m64   -lx64-ucrt-ruby310  -lshell32 -lws2_32 -liphlpapi -limagehlp -lshlwapi -lbcrypt  "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: int main(int argc, char **argv)
+6: {
+7:   return !!argv[argc];
+8: }
+/* end */
+
+PATH=".;C:/Ruby31-x64/lib;C:\Ruby31-x64\bin;C:\Ruby31-x64\msys64\ucrt64\bin;C:\Ruby31-x64\msys64\usr\bin;C:\Ruby31-x64\bin;C:\WINDOWS;C:\WINDOWS\system32;C:\WINDOWS\System32\Wbem;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Users\kouko\AppData\Local\Microsoft\WindowsApps;C:\texlive\2021\bin\win32;C:\Users\kouko\AppData\Local\atom\bin;C:\Users\kouko\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\Git\cmd;C:\Users\kouko\AppData\Roaming\npm;C:\Program Files\heroku\bin" "gcc -IC:/Ruby31-x64/include/ruby-3.1.0/x64-mingw-ucrt -IC:/Ruby31-x64/include/ruby-3.1.0/ruby/backward -IC:/Ruby31-x64/include/ruby-3.1.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math -fstack-protector-strong -m64  -c conftest.c"
+conftest.c:5:10: fatal error: libpq-fe.h: No such file or directory
+    5 | #include <libpq-fe.h>
+      |          ^~~~~~~~~~~~
+compilation terminated.
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: #include <libpq-fe.h>
+/* end */
+
+--------------------
+
