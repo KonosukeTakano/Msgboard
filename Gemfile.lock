@@ -239,7 +239,7 @@ DEPENDENCIES
   debug
   importmap-rails
   jbuilder
-  pg (= 0.20.0)
+  pg
   pry-byebug
   pry-rails
   puma (~> 5.0)

@@ -18,7 +18,7 @@ gem "sprockets-rails"
 
 # 本番環境ではPostgresqlを使う
   group :production do
-    gem 'pg', '0.20.0'
+    gem 'pg'
   end
 
 
