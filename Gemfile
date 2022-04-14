@@ -12,17 +12,16 @@ gem "sprockets-rails"
 # gemのバージョンは適宜変えてください
 
 # 開発・テスト環境ではSQLite3を使う
-#  group :development, :test do
- #   gem 'sqlite3'
-  # end
+  group :development, :test do
+    gem 'sqlite3'
+  end
 
 # 本番環境ではPostgresqlを使う
-#  group :production do
- #   gem 'pg', '0.20.0'
-  # end
+  group :production do
+    gem 'pg', '0.20.0'
+  end
 
-# 本番環境でも、開発・テスト環境でもPostgresqlを使う
-gem 'pg'
+
 
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", "~> 5.0"
