@@ -230,8 +230,7 @@ GEM
       nokogiri (~> 1.8)
     zeitwerk (2.5.4)
 
-PLATFORMS
-  x64-mingw-ucrt
+
 
 DEPENDENCIES
   bootsnap
