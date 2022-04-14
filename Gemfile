@@ -80,7 +80,7 @@ group :development do
   # gem "spring"
 end
 
-gem 'webpacker',    '~> 5.0'
+gem 'webpacker',    '~> 5.4.3'
 
 
 group :test do
