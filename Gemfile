@@ -53,6 +53,10 @@ gem "tzinfo-data"
 # Reduces boot times through caching; required in config/boot.rb
 gem "bootsnap", require: false
 
+#Apply CSS framework
+gem 'bootstrap', '~> 5.0.2'
+gem 'jquery-rails'
+
 # debug tool
 gem "pry-byebug"
 
